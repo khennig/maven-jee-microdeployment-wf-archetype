@@ -7,7 +7,7 @@
     <groupId>de.erik.maven.archetype</groupId>
     <artifactId>jee-microdeploy-wf</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <description>My personal quickstart for testing JEE stuff via Arquillian Micro Deployment</description>
+    <description>My personal quickstart for testing JEE stuff via Arquillian Micro Deployment on WildFly</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
