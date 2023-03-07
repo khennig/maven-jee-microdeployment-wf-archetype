@@ -35,6 +35,7 @@ public class WhateverIT {
 		return ShrinkWrap.create(WebArchive.class, "test.war")
 				.addPackage(Whatever.class.getPackage())
 				.addAsLibraries(dependencies)
+				.addAsResource("persistence.xml", "META-INF/persistence.xml")
 				.addAsWebInfResource(EmptyAsset.INSTANCE, "beans.xml");
 	}
 
@@ -44,6 +45,4 @@ public class WhateverIT {
 		// test, assert
 		assertThat(whatever.helloWorld()).isEqualTo("Hello World!");
 	}
-
-
 }
